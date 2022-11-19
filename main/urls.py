@@ -30,5 +30,5 @@ urlpatterns = [
     path('__debug__/', include('debug_toolbar.urls')), 
 
     # app urls:
-    
+    path('faq/', include('faq.urls')), 
 ]

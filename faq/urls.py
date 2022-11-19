@@ -1,5 +1,19 @@
-# from django.urls import  path
+from django.urls import  path
+from .views import FAQview
+
+
+urlpatterns = [
+    path('',  FAQview.as_view()), 
+]
+
+# from django.urls import path
+# from .views import FAQview
+# from rest_framework import routers
+
+# router = routers.DefaultRouter()
+# router.register('category', FAQview)
+# # router.register('brand', BrandView)
 
 # urlpatterns = [
-    # path('asd',  __.as_view()), 
-# ]
+
+# ] + router.urls
